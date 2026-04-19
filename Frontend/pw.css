@@ -13,9 +13,66 @@ gap: 10px;
     transition: all 0.3s ease;
 }
 .btn:hover{
-    background: #c58989;;
+    background: #534f4f;;
 }
 #bn{
     background: #4CAF50;
 
+}
+.ser{
+    border:2px solid black;
+    padding: 10px;
+    margin-right:90%;
+ border-radius: 10px 0px 10px 0px;
+ background-color: rgb(228, 228, 228);
+  cursor: pointer;
+}
+.tr{
+    color: #fffefe;
+}
+.li{
+     border:2px solid black;
+    padding: 10px;
+    margin-right:90%;
+     border-radius: 10px 0px 10px 0px;
+  background-color: rgb(228, 228, 228);
+     cursor: pointer;
+}
+.Ac{
+     border:2px solid black;
+    padding: 10px;
+    margin-right:90%;
+     border-radius: 10px 0px 10px 0px;
+    background-color: rgb(228, 228, 228);
+    cursor: pointer;
+}
+.bab{
+     border:2px solid black;
+    padding: 10px;
+    margin-right:90%;
+    border-radius: 10px 0px 10px 0px;
+    background-color: rgb(228, 228, 228);
+       cursor: pointer;
+}
+.man{
+     border:2px solid black;
+    padding: 15px;
+    margin-right:90%;
+  border-radius: 10px 0px 10px 0px;
+  background-color: rgb(228, 228, 228);
+     cursor: pointer;
+}
+.fot{
+    text-align: center;
+    bottom: 0;
+    background-color: #f1f1f1;
+    padding:60px;
+}
+.nk:hover{
+    background-color:#fffefe;
+    border-radius: 10px 0px 5px 0px;
+    padding:5px;
+    cursor: pointer;
+    color:rgb(160, 181, 175);
+    transition:0.3s;
 }
