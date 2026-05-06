@@ -1,0 +1,76 @@
+
+body .cadre{
+    width: 450px;
+    margin: auto;
+}
+/* h1 p{
+    text-align: center;
+} */
+.cadre-rappel{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.cadre-rappel input{
+    width: 20px;
+    height: 15px;
+}
+.cadre{
+    border: 2px ;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 0 10px;
+    background-color: white;
+}
+input{
+    width: 100%;
+    border-radius: 4px;
+    padding: 9px 0px;
+}
+#bouton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+#yo{
+    color: white;
+    background-color: rgba(0, 128, 0, 0.849);
+    width: 100%;
+    border: none;
+    padding: 9px 0px;
+    border-radius: 5px;
+}
+#continue{
+   border-radius: 8px;
+   justify-content: space-around;
+   align-items: center;
+   padding: 50px;
+}
+button{
+    background-color:white;
+    border: 1px solid black;
+    opacity: 0,2;
+}
+label{
+    text-align: left;
+}
+a{
+    color: rgba(0, 128, 0, 0.849);
+    text-decoration: none;
+}
+nav{
+    justify-content: flex-end;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 80px;
+    justify-content: flex-end;
+
+}
+.bloc{
+    background-color: rgba(0, 128, 0, 0.062);
+}

@@ -1,0 +1,138 @@
+#lien{
+display: flex;
+gap: 10px;
+}
+.btn{
+    padding: 8px 16px;
+    border-radius: 20px;
+    background-color: #f1f1f1;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500px;
+    transition: all 0.3s ease;
+}
+.btn:hover{
+    background: #534f4f;;
+}
+#bn{
+    background: #4CAF50;
+
+}
+.ser{
+    border:2px solid white;
+    padding: 20px;
+ border-radius: 10px;
+ background-color: white;
+  cursor: pointer;
+}
+.tr{
+    color: #fffefe;
+}
+.li{
+     border:2px solid white;
+    padding:20px;
+     border-radius: 10px ;
+  background-color: white;
+     cursor: pointer;
+}
+/* .Ac{ */
+     /* border:2px solid white; */
+    /* padding:12px; */
+     /* border-radius: 10px; */
+    /* background-color: white; */
+    /* cursor: pointer; */
+    /* } */
+.bab{
+     border:2px solid white;
+    padding:20px;
+    border-radius: 10px;
+    background-color: white;
+       cursor: pointer;
+}
+/* .man{ */
+     /* border:2px solid white; */
+    /* padding:12px; */
+  /* border-radius: 10px; */
+  /* background-color:white; */
+     /* cursor: pointer; */
+/* } */
+.fot{
+    text-align: center;
+    bottom: 0;
+    background-color: #f1f1f1;
+    padding:25px;
+}
+.nk:hover{
+    background-color:green;
+    border-radius: 10px 0px 5px 0px;
+    padding:5px;
+    cursor: pointer;
+    color:rgb(160, 181, 175);
+    transition:0.3s;
+}
+#container{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap: 25px;
+padding: 20px;
+max-width:650px;
+margin: 0;
+}
+body{
+    background-image: url("photo_2026-04-29_13-52-02.jpg");
+    background-color:#f5f7fa;
+}
+header{
+    background-color: white;
+    height:55px;
+      margin-right: 10px;
+      margin-left: 10px;
+
+}
+header{
+    background: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    height: 20px;
+}
+nav a{
+    margin-left: 30px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+nav a:hover{
+    color: #2e7d32;
+}
+.logo{
+    color: blue;
+}
+#cou{
+    color: green;
+}
+.cart {
+/* font-size: 22px;
+width: 40px;
+height: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 10px;
+background: #eef2ff;
+color: #4f46e5;
+margin-bottom: 10px;
+background-color: white; */
+background-color: white;
+border-radius: 20px;
+}
+.ma{
+    display:flex;
+   gap: 12px;
+}
+.par{
+    margin-left: 40%;
+}
