@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: #f5f5f5;
+    color: #222;
+}
+.navbar{
+    background: white;
+    padding: 18px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 28px;
+    font-weight: bold;
+}
+.logo-box{
+    width: 45px;
+    height: 45px;
+    background: #163d8f;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.jobs{
+    color: #2cab57;
+}
+.signup{
+    text-decoration: none;
+    color: #163d8f;
+    font-weight: bold;
+    font-size: 18px;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 20px;
+}
+.card{
+    background: white;
+    width: 420px;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0);
+}
+.card-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+h2{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+.subtitle{
+    text-align: center;
+    color: gray;
+    margin-bottom: 25px;
+}
+.switch{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+.btn-switch{
+    flex: 1;
+    padding: 14px;
+    border-radius: 12px;
+    border: 2px solid #ddd;
+    background: white;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.active{
+    border-color: #2cab57;
+    color: #2cab57;
+    background: #f5fff8;
+}
+.input-group{
+    margin-bottom: 8px;
+}
+.input-group label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+.input-box{
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 14px;
+    background: #fff;
+}
+.input-box i{
+    color: gray;
+    margin-right: 10px;
+}
+.input-box input{
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+.forgot{
+    color: #2cab57;
+    text-decoration: none;
+    font-weight: bold;
+}
+.login-btn{
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 12px;
+    background: #2cab57;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.separator{
+    text-align: center;
+    color: gray;
+    margin: 20px 0;
+    position: relative;
+}
+.separator::before , .separator::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background: #ddd;
+}
+.separator::before{
+    left: 0;
+}
+.separator::after{
+    right: 0;
+}
+.google-btn{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+.google-btn i {
+    color: #4285F4;
+    margin-right: 10px;
+}
+.register{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+.register a{
+    color: #2cab57;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* footer{
+    text-align: center;
+    margin: 40px 0 20px;
+    color: #555;
+} */
+
+footer {
+    background: #111111;
+    color: #b3b3b3;
+    padding: 50px 5% 20px 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    max-width: 100%;
+}
+
+footer h4 {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    position: relative;
+    font-weight: 600;
+}
+
+/* Petit accent vert sous les titres du footer */
+footer h4::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: green;
+    margin-top: 8px;
+}
+
+footer p {
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Ciblage de la zone contact */
+.yech p {
+    display: flex;
+    align-items: center;
+}
+
+/* Style pour mettre en valeur les adresses mail et numéros */
+.yech p:hover {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+
+/* --- RESPONSIVE ADAPTATION (MOBILE) --- */
+@media (max-width: 768px) {
+    .yep {
+        padding: 45px 20px;
+    }
+
+    .yep h2 {
+        font-size: 1.6rem;
+    }
+
+    .yep p {
+        font-size: 1rem;
+    }
+
+    footer {
+        grid-template-columns: 1fr; /* Aligne les blocs verticalement sur mobile */
+        text-align: center;
+        gap: 30px;
+    }
+
+    footer h4::after {
+        margin: 8px auto 0 auto; /* Centre le petit trait vert sur mobile */
+    }
+}

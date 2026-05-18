@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>web page</title>
     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <!--ENTETE(HEADER)-->
@@ -12,13 +13,13 @@
         <div class="logo">Dschang <span id="cou">jobs</span></div>
         <nav>
             <a href="#">Acceuil</a>
-            <a href="Offres de job.html">Offres de jobs</a>
-            <a href="publier offre.html">publier une offre</a>
+            <a href="pw.html">Offres de jobs</a>
+            <a href="ajout.html">publier une offre</a>
             <a href="connexion.html">connexion</a>
         </nav>
     </header>
     <div class="yo">
-        <h2>Trouve un job a temps partiel<br>a Dschang</h2>
+        <h2>Trouve un job a temps partiel<br>à Dschang</h2>
         <p>les meilleures offres de jobs flexibles pour les etudiants<br>de l'universite de Dschang</p>
         <input type="text" placeholder="Rechercher un job..."><input type="submit" id="capo" value="voir les offres">
     </div>
@@ -31,31 +32,67 @@
          <input type="button" value="Apres-midi">
          <input type="button" value="soiree"> 
         </div>
-        <div class="cards">
-            <div class="card">
-                <h3>Serveur</h3>
-                <p>Dschang</p>
-                <p>Samedi - Dimanche</p>
-                <p>16h - 22h</p>
-                <button type="button"><strong>5000 FCFA / jour</strong></button>
-            </div>
-            <div class="card">
-                <h3>Liveur</h3>
-                <p>Dschang</p>
-                <p>lundi au vendredi</p>
-                <p>15h - 19h</p>
-                <button>2500 FCFA / jour</button>
-            </div>
-            <div class="card">
-                <h3>Assistant Commercial</h3>
-                <p>Dschang</p>
-                <p>lundi - Mercredi</p>
-                <p>Apres-midi</p>
-                <button>15000 FCFA</button>
-            </div>
-            <button type="submit" class="caporal">voir toutes les Offres</button>
-        </div>
-    </section>
+        <div class="ser">
+     <strong> 🧑‍🍳 SERVEUR</strong><br>
+     <small>snack bar</small>
+     <hr class="tr">
+    <p><i class="fa-solid fa-location-dot"></i> Dshang</p>
+    <p><i class="fa-solid fa-calendar-days"></i> lundi-vendredi</p>
+    <p><i class="fa-solid fa-clock"></i> 15h-19h</p> 
+     <hr class="tr">
+    <button type="button"  class="nk"><strong>3000FCFA/jour</strong></button>
+</div>
+<div class="ser">
+    <strong> 🚛 LIVREUR</strong><br>
+<small>Express Delivery</small>
+<hr class="tr">
+     <p><i class="fa-solid fa-location-dot"></i> Douala</p>
+    <p><i class="fa-solid fa-calendar-days"></i> samedi-dimanche</p>
+    <p><i class="fa-solid fa-clock"></i> 12h-14h</p> 
+         <hr class="tr">
+     <button type="button"  class="nk"><strong>5000FCFA/jour</strong></button>
+</div>
+<div class="ser">
+    <strong> 🛍️ ASSISTANT</strong><br>
+    <small>agroMarket</small>
+    <hr class="tr">
+ <p><i class="fa-solid fa-location-dot"></i> baffoussam</p>
+    <p><i class="fa-solid fa-calendar-days"></i> mercredi-dimanche</p>
+     <p><i class="fa-solid fa-clock"></i> 15h-18h</p>
+          <hr class="tr"> 
+      <button type="button"  class="nk"><strong>3000FCFA/jour</strong></button>
+</div>
+<div class="ser">
+    <strong>  🧑‍🍼 BABY SISTER</strong><br>
+    <small>Home familly</small>
+         <hr class="tr">
+    <p><i class="fa-solid fa-location-dot"></i> foumbot</p>
+    <p><i class="fa-solid fa-calendar-days"></i> samedi-dimanche</p>
+     <p><i class="fa-solid fa-clock"></i> 12h-18h</p> 
+          <hr class="tr">
+      <button type="button"  class="nk" ><strong>30000FCFA/mois</strong></button>
+</div>
+<div class="ser">
+    <strong>👷 MANOEUVRE</strong><br>
+    <small>chantier</small>
+         <hr class="tr">
+    <p><i class="fa-solid fa-location-dot"></i> yaoundé</p>
+    <p><i class="fa-solid fa-calendar-days"></i> samedi-dimanche</p>
+     <p><i class="fa-solid fa-clock"></i> 08h-15h</p> 
+          <hr class="tr">
+      <button type="button" class="nk"><strong>2500FCFA/jour</strong></button>
+</div>
+<div class="ser">
+    <strong> 🧑‍🏫 VACATAIRE</strong><br>
+    <small>Secondary school</small>
+         <hr class="tr">
+    <p><i class="fa-solid fa-location-dot"></i> yaoundé</p>
+    <p><i class="fa-solid fa-calendar-days"></i> lundi-vendredi</p>
+     <p><i class="fa-solid fa-clock"></i> 8h-16h</p> 
+          <hr class="tr">
+      <button type="button"  class="nk" ><strong>30000FCFA/mois</strong></button>
+</div>
+</div><br>
     <!--SECTION CATEGORIES-->
     <section class="categories">
        <h2>Categories de jobs</h2>
@@ -71,7 +108,7 @@
         <p>
             Entreprise ou particulier? Publiez vos offres de jobs flexibles.
         </p>
-        <input type="submit" value="Deposer une Annonce" id="jo">
+       <a href="ajout.html"> <input type="submit" value="Deposer une Annonce" id="jo"></a>
     </div>
     <!--FOOTER-->
     <footer>

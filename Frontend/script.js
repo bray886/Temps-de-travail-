@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(){
     const searchInput = document.querySelector('input[type="text"]');
-    const cards = document.querySelectorAll('.card');
+    const cards = document.querySelectorAll('.ser');
     searchInput.addEventListener("keyup", function(){
         let value = searchInput.value.toLowerCase();
         cards.forEach(card => {

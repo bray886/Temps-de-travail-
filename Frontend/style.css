@@ -1,112 +1,433 @@
-body{
-    font-family: Arial,sans-serif;
+/* --- CONFIGURATION GLOBALE --- */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
-    background: whitesmoke;
+    padding: 0;
+    background: #f5f5f5;
+    color: #333;
 }
-/*entete*/
-header{
+
+/* --- ENTETE (HEADER) --- */
+header {
     display: flex;
     justify-content: space-between;
-    padding: 15px 30px;
+    align-items: center;
+    padding: 15px 5%;
     background: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
-nav a{
-    margin: 0 10px;
-    text-decoration:none ;
-    color: black ;
-}
-/*SECTION JOB*/
-.jobs{
-    padding: 40px;
-}
-.jobs input{
-    padding: 10px;
-    width: 300px;
-    margin-bottom: 20px;
-}
-.cards{
-    display: flex;
-    gap: 20px;
-}
-.cards>button{
-    text-align: center;
-}
-.card{
-    background: wheat;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    transition: 0.5s;
-}
-/*categories*/
-.categories{
-    padding: 40px;
-}
-.cat-container{
-    display: flex;
-    gap: 20px;
-}
-.cat{
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0);
-}
-/*footer*/
-footer{
-    display: flex;
-    justify-content: space-around;
-    background: white;
-    padding: 20px;
-    margin-top: 30px;
-}
-.card>button{
-    background-color: green;
-    color: white;
-}
-.cabrel{
-  display: flex;
-  gap: 10px;
-}
-.cabrel input{
-    width: auto;
-    padding: 8px 15px;
-    border: 1px solid #ccc;
-    background: whitesmoke;
-    border-radius: 8px;
-    cursor: pointer;
-}
-.cabrel input:hover{
-    background: #ddd; /*pour l'effet de survol*/
-}
-.yo{
-    padding-left: 4%;
-}
-#capo{
-    background: green;
-    color: white;
-}
-.yep{
-    padding-left: 4%;
-}
-.yech{
-    padding-right: 28%;
-}
-#jo{
-    background: green;
-    color: white;
-}
-#cou{
-    color: green;
-}
-.logo{
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: bold;
     color: blue;
 }
-.card{
-    transition: transform 0.3s ease,box-shadow 0.3s ease;
+
+#cou {
+    color: green;
 }
-.card:hover{
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0,0.2);
+
+nav a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: green;
+}
+
+/* --- SECTION HERO (.yo) avec Image de Fond --- */
+.yo {
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), 
+                url('image.png') no-repeat center center/cover;
+    padding: 80px 5%;
+    text-align: center;
+    color: white;
+}
+
+.yo h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.yo p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+/* Barre de recherche interne à .yo */
+.yo input[type="text"] {
+    padding: 12px 20px;
+    width: 100%;
+    max-width: 350px;
+    border: none;
+    border-radius: 25px 0 0 25px;
+    font-size: 1rem;
+    outline: none;
+}
+
+#capo {
+    background: green;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+#capo:hover {
+    background: #1e7e34;
+}
+
+/* --- SECTION OFFRES (.jobs) --- */
+.jobs {
+    padding: 50px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.jobs h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Filtres (.cabrel) */
+.cabrel {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+}
+
+.cabrel input {
+    width: auto;
+    padding: 8px 18px;
+    border: 1px solid #ddd;
+    background: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.cabrel input:hover {
+    background: green;
+    color: white;
+    border-color: green;
+}
+
+/* Bouton Voir toutes les offres (.caporal) */
+.caporal {
+    grid-column: 1 / -1; /* Aligne le bouton au centre de la grille */
+    justify-self: center;
+    padding: 12px 30px;
+    background: transparent;
+    border: 2px solid green;
+    color: green;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+}
+
+.caporal:hover {
+    background: green;
+    color: white;
+}
+.categories {
+    padding: 60px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.categories h2 {
+    font-size: 1.8rem;
+    color: #222;
+    margin-bottom: 30px;
+    position: relative;
+    font-weight: 700;
+}
+
+/* Une ligne discrète sous le titre pour le style */
+.categories h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: green;
+    margin: 8px auto 0 auto;
+    border-radius: 2px;
+}
+
+/* Grille responsive : s'ajuste toute seule selon la taille de l'écran */
+.cat-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 10px 0;
+}
+
+/* Style de chaque carte catégorie */
+.cat {
+    background: white;
+    padding: 30px 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    border-radius: 12px;
+    border: 1px solid #eef0f2;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Effet dynamique au survol (Hover effect) */
+.cat:hover {
+    background: green;
+    color: white;
+    border-color: green;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 128, 0, 0.15);
+}
+
+/* --- AJUSTEMENT PETITS ÉCRANS (MOBILE) --- */
+@media (max-width: 480px) {
+    .categories {
+        padding: 40px 20px;
+    }
+    
+    .cat-container {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* Deux colonnes sur très petit écran */
+        gap: 12px;
+    }
+
+    .cat {
+        padding: 20px 10px;
+        font-size: 1rem;
+    }
+}
+
+/* --- SECTION ACTION (.yep) --- */
+.yep {
+    padding: 60px 5%;
+    text-align: center;
+    background: linear-gradient(135deg, #eef5ed 0%, #f4f9f3 100%);
+    border-top: 1px solid #e2ece0;
+    border-bottom: 1px solid #e2ece0;
+}
+
+.yep h2 {
+    font-size: 2rem;
+    color: #111;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.yep p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto 25px auto;
+    line-height: 1.5;
+}
+
+/* Style du bouton "Déposer une annonce" */
+#jo {
+    background: green;
+    color: white;
+    padding: 14px 35px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 128, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+#jo:hover {
+    background: #1e7e34;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 128, 0, 0.3);
+}
+
+#jo:active {
+    transform: translateY(0);
+}
+
+
+/* --- LE FOYER (FOOTER) --- */
+footer {
+    background: #111111;
+    color: #b3b3b3;
+    padding: 50px 5% 20px 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    max-width: 100%;
+}
+
+footer h4 {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    position: relative;
+    font-weight: 600;
+}
+
+/* Petit accent vert sous les titres du footer */
+footer h4::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: green;
+    margin-top: 8px;
+}
+
+footer p {
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Ciblage de la zone contact */
+.yech p {
+    display: flex;
+    align-items: center;
+}
+
+/* Style pour mettre en valeur les adresses mail et numéros */
+.yech p:hover {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+
+/* --- RESPONSIVE ADAPTATION (MOBILE) --- */
+@media (max-width: 768px) {
+    .yep {
+        padding: 45px 20px;
+    }
+
+    .yep h2 {
+        font-size: 1.6rem;
+    }
+
+    .yep p {
+        font-size: 1rem;
+    }
+
+    footer {
+        grid-template-columns: 1fr; /* Aligne les blocs verticalement sur mobile */
+        text-align: center;
+        gap: 30px;
+    }
+
+    footer h4::after {
+        margin: 8px auto 0 auto; /* Centre le petit trait vert sur mobile */
+    }
+}
+
+/* ==========================================================================
+   4. GRILLE & CARTES D'OFFRES
+   ========================================================================== */
+#container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.ser, .li, .bab {
+    background-color: rgba(255, 255, 255, 0.95);
+    border: none;
+    padding: 25px;
+    border-radius: 16px;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ser:hover, .li:hover, .bab:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.ser strong {
+    font-size: 19px;
+    color: #1f2937;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.ser small {
+    color: #6b7280;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.tr {
+    border: 0;
+    height: 1px;
+    background: #e5e7eb;
+    margin: 15px 0;
+}
+
+.ser p {
+    margin: 8px 0;
+    font-size: 14px;
+    color: #4b5563;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Icônes FontAwesome */
+.fa-location-dot { color: #ef4444; }
+.fa-calendar-days { color: #3b82f6; }
+.fa-clock { color: #f59e0b; }
+
+/* Bouton / Badge de salaire */
+.nk {
+    background-color: #e6f4ea;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    color: #10b981;
+    width: 100%;
+    margin-top: 15px;
+    font-size: 15px;
+    transition: all 0.2s ease;
+}
+
+.ser:hover .nk, .li:hover .nk, .bab:hover .nk {
+    background-color: #10b981;
+    color: #ffffff;
 }
